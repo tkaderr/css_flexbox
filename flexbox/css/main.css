@@ -1,0 +1,16 @@
+/* Your code goes here */
+
+.container{
+
+  /*When display flex, it affects the main axis or the horizontal axis*/
+  /*flex-direction column and row*/
+  display: flex;
+  flex-direction: row;
+  all the child elements are going to ignore the float properties and initially put float
+  float: right;
+  width: 100%
+}
+
+.container div {
+
+}
