@@ -5,12 +5,47 @@
   /*When display flex, it affects the main axis or the horizontal axis*/
   /*flex-direction column and row*/
   display: flex;
+
+  /*row reverse will reverse the elements in the container and go from right to left and does right justify*/
+  /*flex-direction: row-reverse;*/
   flex-direction: row;
-  all the child elements are going to ignore the float properties and initially put float
-  float: right;
-  width: 100%
+
+  /*flex-direction: row;*/
+
+  /*all the child elements are going to ignore the float properties and initially put float*/
+  /*float: right;*/
+  width: 500px;
+  border: 1px solid white;
+  height: 200px;
+
+  /*justify- content is like text-align center,left and right ;*/
+  /*justify-content: flex-end;
+  justify-content: flex-start;*/
+  /*justify-content: center;*/
+
+  /*justify-content with space around adds spacing between container*/
+  /*justify-content: space-around;*/
+
+  /*Basically doesnt add spacing between the first and last container but spaces the middle ones*/
+  justify-content: space-between;
+
+  /*align items alters the cross axis or y axis alignment*/
+  align-items: flex-start;
+
+  align-items: flex start;
+
+/*wrap around the container/ default is no wrap*/
+/*wrapping can be dependednt on the flex-direction and justify-content: ;*/
+  flex-wrap: wrap;
+
+/*You can combine flex-direction with flex-wrap called flex-flow where first one is the direction and the second is the wrap*/
+flex-flow: row wrap;
+
+/*justify-content is for main axis (text-align) and align-content is for multiple lines with wrapping (otherwise user align-items) and for the cross axis and is like vertical-align;*/
 }
 
 .container div {
 
 }
+
+/*order allows which items in the container show first to last. higher the order, the more last it is iand vice versa*/
